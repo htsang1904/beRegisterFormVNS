@@ -2,12 +2,12 @@ const nodemailer = require('nodemailer');
 require('dotenv').config();
 
 const transporter = nodemailer.createTransport({
-  host: 'mail.register-form-vns.io.vn', // Thay bằng domain thật
-  port: 465,                   // hoặc 587 nếu dùng TLS
-  secure: true,                // true nếu dùng SSL (465)
+  host: 'mail.register-form-vns.io.vn',
+  port: 465,                
+  secure: true,
   auth: {
-    user: process.env.MAIL_USER,  // ví dụ: info@yourdomain.com
-    pass: process.env.MAIL_PASS   // mật khẩu email
+    user: process.env.MAIL_USER, 
+    pass: process.env.MAIL_PASS
   }
 });
 

@@ -29,6 +29,7 @@ app.post('/register', upload.fields([
   { name: 'pdf', maxCount: 1 },
   { name: 'card_image', maxCount: 1 },
   { name: 'passport_image', maxCount: 1 },
+  { name: 'payment_image', maxCount: 1 },
 ]), async (req, res) => {
   try {
     const formData = JSON.parse(req.body.formData);
